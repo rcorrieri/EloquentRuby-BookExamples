@@ -37,8 +37,7 @@ for font in fonts
   puts font
 end
 
-# the above for item loop works in ruby, but it is more idiomatic to do the below 2
-# code
+# the above for item loop works in ruby, but it is more idiomatic to do the below way
 fonts.each do |font|
   puts font
 end
@@ -80,4 +79,3 @@ when Fixnum
 when Object
   puts 'This is an object, because everything is'
 end
-
