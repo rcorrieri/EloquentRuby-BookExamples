@@ -1,24 +1,24 @@
-falseItem = false
+false_item = false
 
 # regular if statement
-if falseItem
+if false_item
   puts "This is True"
 end
 
 # if not leads us possible double negative territory
-if not falseItem
+if not false_item
   puts "This is Not Not False"
 end
 
 # for this reason there is the 'unless' keyword, which means only execute if this is false
-unless falseItem
+unless false_item
   puts 'This only happens when the item is false'
 end
 
 # there is also a corellary for the 'while' statement.  Instead of 'while not' there is 'until'
-until falseItem
-  puts 'falseitem is still false'
-  falseItem = true
+until false_item
+  puts 'false_item is still false'
+  false_item = true
 end
 
 # the ternary operator works in ruby
@@ -43,9 +43,9 @@ fonts.each do |font|
 end
 
 # evaulations are allowed in case statements.  it will stop at the first case it finds
-numberFour = 4
+the_number_four = 4
 
-case numberFour
+case the_number_four
 when 2 + 3
   puts '2 + 3 is 5!'
 when 5 - 1
@@ -57,7 +57,7 @@ when 4
 end
 
 # you can also evaluate multiple values per when statement
-case numberFour
+case the_number_four
 when 2 + 2, 5
   puts 'It found 2 + 2, or 5'
 when 4,5
@@ -65,7 +65,7 @@ when 4,5
 end
 
 # else is the default case
-case numberFour
+case the_number_four
 when 5
   puts 'This found 5!'
 else
@@ -73,7 +73,7 @@ else
 end
 
 # wow, this can also be used for identifying the object type as well.
-case numberFour
+case the_number_four
 when Fixnum
   puts "This is a Fixnum"
 when Object
