@@ -20,14 +20,14 @@ pp literal_string
 
 # chomp cuts off the last trailing white space characters
 
-puts "hello\n\n".chomp
+pp "hello\n\n".chomp
 
 # split creates an array split by the selected carachter
 
-puts "make;this;into;an;array".split(';')
+pp "make;this;into;an;array".split(';')
 
 # sub replaces the first occurance
-puts 'first first first first'.sub('first','second')
+pp 'first first first first'.sub('first','second')
 
 # gsub replaces all
-puts 'first first first first'.gsub('first','second')
+pp 'first first first first'.gsub('first','second')

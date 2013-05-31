@@ -56,7 +56,7 @@ pp letter_count_per_word
 # inject is used to reduce a collection down to a single value
 count_of_all_letters = letter_count_per_word.inject(0) { |sum, word| sum += word }
 
-puts count_of_all_letters
+pp count_of_all_letters
 
 # the ! is the key that you are doing an operation that modifies the value,
 # in this case the words will be reversed.
