@@ -85,4 +85,10 @@ pp line_starts_with_S =~ multiple_line_string # Should be 23
 line_ends_with_e = /e$/
 pp line_ends_with_e =~ multiple_line_string # should be 21
 
+# you can use scan to get multiple results
+with_numbers = '3 bears 52 cards 5 senses 9 times 0 crates 3 kings'
+
+pp with_numbers.scan(/\s*\d*\s*/).inject(0) { |sum, curr| sum += curr.to_i }
+
+
 
