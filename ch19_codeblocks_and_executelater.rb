@@ -40,7 +40,7 @@ doc.load('Load this text')
 doc.save('Save the text')
 
 # you can save functions as objects
-new_load_listener = lambda do |doc, path|
+new_load_listener = lambda do |doc, text|
   pp 'dynamic load listener'
 end
 
